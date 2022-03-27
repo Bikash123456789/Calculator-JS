@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.calculator{
+    width: 400px;
+    box-shadow: 1px 1px 20px -2px black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    margin:10px;
+}
+
+.equal{
+    grid-column: 4;
+    grid-row: 2/ span 4 ;
+}
+
+button{
+    cursor: pointer;
+    margin: 0px;
+    padding: 13px 0px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: rgb(199, 199, 199);
+}
+
+button:hover{
+    filter: brightness(110%);
+    outline: none;
+}
+
+.operator{
+    font-size: 24px;
+    background-color: gray;
+    color: white;
+}
+
+.equal{
+    background-color: rgb(71, 192, 15);
+}
+
+.clear-btn{
+    background-color: rgb(226, 70, 70);
+    color: white;
+}
+.clear-btn:hover{
+    filter: brightness(90%);
+}
+
+button:active{
+    transform: translateY(2px);
+}
+h2{
+    background-color: white;
+    color:black;
+}
